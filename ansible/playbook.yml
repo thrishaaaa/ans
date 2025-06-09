@@ -1,0 +1,15 @@
+---
+- name: deploy app using tomcat
+  hosts: web
+  become: yes
+  tasks:
+    - name: copy war to tomcat
+      copy:
+        src: ""
+        dest: "/opt/tomcat/webapps/mavenansibleapp.war"
+        remote_src: no
+    
+    - name : restart tomacat 
+      systemd:
+        name: tomact
+        state: restarted
