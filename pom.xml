@@ -39,7 +39,7 @@
 <!--  Update to latest stable version  -->
 </plugin>
 </plugins>
-<finalName>mavenansibleapp</finalName>
+<finalName>ansib</finalName>
 <!--  create a web page with the name MavenAnsibleWebApp, if we want some other name we can chage it  -->
 </build>
 </project>
