@@ -5,8 +5,8 @@
   tasks:
     - name: copy war to tomcat
       copy:
-        src: "/var/snap/jenkins/4874/workspace/ansib/target/mavenansibleapp.war"
-        dest: "/opt/tomcat/webapps/mavenansibleapp.war"
+        src: "/var/snap/jenkins/4874/workspace/ansib/target/ansib.war"
+        dest: "/opt/tomcat/webapps/ansib.war"
         remote_src: no
     
     - name : restart tomacat 
