@@ -9,7 +9,7 @@
         dest: "/opt/tomcat/webapps/ansib.war"
         remote_src: no
     
-    - name : restart tomacat 
+    - name : restart tomcat 
       systemd:
-        name: tomact
+        name: tomcat
         state: restarted
